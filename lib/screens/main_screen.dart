@@ -32,27 +32,26 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: AppTheme.surfaceColor,
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
-        NavigationDestination(
-          icon: const Icon(Icons.account_balance_outlined),
-          selectedIcon: const Icon(Icons.account_balance, color: AppTheme.primaryColor),
-          label: 'Net Worth',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.pie_chart_outline),
-          selectedIcon: const Icon(Icons.pie_chart, color: AppTheme.primaryColor),
-          label: 'Holdings',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.calendar_month_outlined),
-          selectedIcon: const Icon(Icons.calendar_month, color: AppTheme.primaryColor),
-          label: 'Dividends',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.flag_outlined),
-          selectedIcon: const Icon(Icons.flag, color: AppTheme.primaryColor),
-          label: 'Targets',
-        ),
-
+          NavigationDestination(
+            icon: const Icon(Icons.dashboard_outlined),
+            selectedIcon: const Icon(Icons.dashboard, color: AppTheme.primaryColor),
+            label: 'Net Worth',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.list_alt_outlined),
+            selectedIcon: const Icon(Icons.list_alt, color: AppTheme.primaryColor),
+            label: 'Holdings',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.analytics_outlined),
+            selectedIcon: const Icon(Icons.analytics, color: AppTheme.primaryColor),
+            label: 'Dividends',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.settings_outlined),
+            selectedIcon: const Icon(Icons.settings, color: AppTheme.primaryColor),
+            label: 'Rebalance',
+          ),
         ],
       ),
     );
